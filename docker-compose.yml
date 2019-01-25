@@ -17,7 +17,8 @@ services:
       - .:/californica
       - ./data:/opt/data
       - bundle_dir:/usr/local/bundle
-    working_dir: /californica
+    working_dir: /californica/hyrax_demo
+    command: bundle exec rails server
 
   fcrepo:
     image: cbeer/fcrepo4:4.7
